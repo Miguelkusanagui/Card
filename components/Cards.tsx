@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, Dimensions } from 'react-native';
-import { Button } from 'react-native-paper';
+
 
 interface cardProps {
   info: string
@@ -10,24 +10,23 @@ interface cardProps {
 const Cards = ({ info, titleCard }: cardProps) => {
 
   return (
-    <View style={{ padding: 20, left: 3, width: 80 }}>
+    <View style={{ padding: 20, left: 3, width: 50 }}>
       <View style={styles.cardContainer}>
-        <View style={{ backgroundColor: '#32BC82', width: '100%', height: 75, borderRadius: 5 }}>
-          <Text style={{ color: 'white', fontSize: 28, textAlign: 'left', padding: 2 }}> 
+        <View style={{ backgroundColor: '#32BC82', width: '100%', height: 'auto', borderTopLeftRadius: 20, borderTopRightRadius: 20,flexDirection: 'row', justifyContent:'space-between', padding: 5}}>
+          <Text style={{ color: 'white', fontSize: 18}}> 
              5 min antes  
           </Text>
-          <Text style={{ color: 'white', fontSize: 28, textAlign: 'right', top: -40, }}> 
+          <Text style={{ color: 'white', fontSize: 18}}> 
              15:40hrs
           </Text>
         </View>
-        <Text style={{ color: 'black', fontSize: 28, textAlign: 'left' }}>
+        <Text style={{ color: 'black', fontSize: 22, textAlign: 'auto', padding: 35 }}>
             {titleCard}
           </Text>
-        <Text style={{ color: 'black', fontSize: 18, textAlign: 'left', padding: 20 }}>
+        <Text style={{ color: 'black', fontSize: 18, textAlign: 'auto', top: -40, padding: 30}}>
           {info}
         </Text>
         <View style={styles.infoStyle}>
-
 
         </View>
       </View>
@@ -48,23 +47,20 @@ const styles = StyleSheet.create({
     width: deviceWidth - offset,
     backgroundColor: '#D9D9D9',
     height: 200,
-    borderRadius: radius,
+    borderRadius: 20,
 
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 5,
-      height: 5,
-    },
-    shadowOpacity: 0.75,
-    shadowRadius: 5,
-    elevation: 9,
   },
-   buttonStyle:{
-     
-   },
 
+info:{
+  fontSize: 18,
+  padding: 30,
+ 
+},
 
+titleCard:{
+    padding: 30
 
+},
   titleStyle: {
     fontSize: 20,
     fontWeight: '800',

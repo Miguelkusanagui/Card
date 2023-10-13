@@ -1,6 +1,6 @@
 import  React from 'react';
-import { Text, View,} from 'react-native';
-import Cards  from '././src/components/cards/Cards';
+import { View} from 'react-native';
+import Cards from './components/Cards';
 
 export const App = ({}:any) => {
   
