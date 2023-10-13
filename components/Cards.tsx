@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Dimensions } from 'react-native';
+import { View, Text, StyleSheet, Dimensions, Animated } from 'react-native';
 
 
 interface cardProps {
@@ -20,10 +20,10 @@ const Cards = ({ info, titleCard }: cardProps) => {
              15:40hrs
           </Text>
         </View>
-        <Text style={{ color: 'black', fontSize: 22, textAlign: 'auto', padding: 35 }}>
+        <Text style={{ color: 'black', fontSize: 22, textAlign: 'auto', marginLeft: 15, marginVertical: 20 }}>
             {titleCard}
           </Text>
-        <Text style={{ color: 'black', fontSize: 18, textAlign: 'auto', top: -40, padding: 30}}>
+        <Text style={{ color: 'black', fontSize: 18, textAlign: 'auto', marginLeft: 15, marginVertical: 15 }}>
           {info}
         </Text>
         <View style={styles.infoStyle}>
@@ -58,7 +58,7 @@ info:{
 },
 
 titleCard:{
-    padding: 30
+    marginLeft: 5,
 
 },
   titleStyle: {
