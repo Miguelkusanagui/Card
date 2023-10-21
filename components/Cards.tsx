@@ -5,7 +5,7 @@ import { View, Text, StyleSheet, Dimensions, Animated } from 'react-native';
 interface cardProps {
   info: string
   titleCard: string
-
+  
 }
 const Cards = ({ info, titleCard }: cardProps) => {
 
@@ -20,7 +20,7 @@ const Cards = ({ info, titleCard }: cardProps) => {
              15:40hrs
           </Text>
         </View>
-        <Text style={{ color: 'black', fontSize: 22, textAlign: 'auto', marginLeft: 15, marginVertical: 20 }}>
+        <Text style={{ color: 'black', fontSize: 22, textAlign: 'auto', marginLeft: 15, marginVertical: 15  }}>
             {titleCard}
           </Text>
         <Text style={{ color: 'black', fontSize: 18, textAlign: 'auto', marginLeft: 15, marginVertical: 15 }}>
